@@ -1,6 +1,6 @@
 # Galeria de fotos
 
-### Uma simples **Galeria de fotos** agrupadas em categorias.
+Uma simples **Galeria de fotos** agrupadas em categorias.
 
 ### Tecnologias:
 
