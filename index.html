@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Galeria de Fotos</title>
+</head>
+<body >
+    <div id="app">
+        <h1 class="title">Galeria</h1>
+        <select class="select" v-model="selected">
+            <option v-for="opt in options"
+                    :value="opt.value"
+                    :key="opt.value">{{ opt.name }}</option>
+        </select>
+
+        <div class="container">
+            <div class="galery-img">
+                <div class="small-img" ref="frame" v-for="(image, index) in images">
+                    <img :src="'img/' + image" 
+                        :data-id="index" 
+                        @click="activeImage">
+                </div>
+            </div>
+
+            <div class="big-img">
+                <img :src="'img/' + images[indexBigImg]" alt="">
+            </div>
+        </div>
+    </div>    
+
+    <script src="assets/Js/vue.min.js"></script>
+    <script src="assets/Js/data.js"></script>
+    <script src="assets/Js/main.js"></script>
+</body>
+</html>
