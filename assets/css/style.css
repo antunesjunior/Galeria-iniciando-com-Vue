@@ -18,13 +18,8 @@ img{
     text-align: center;
     text-decoration: underline;
     color: yellow;
-    padding: 0;
-    margin: 0;
 }
 
-.border{
-    border: 1px solid black;
-}
 .select{
     font-size: 1.5em;
     padding: 8px;
