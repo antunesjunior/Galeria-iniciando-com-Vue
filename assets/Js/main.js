@@ -1,4 +1,5 @@
-(function() {
+(function(win, doc) {
+    'use strict';
    
     var vm = new Vue({
         el:"#app",
@@ -47,4 +48,4 @@
         },
     })
     
-})();
+})(window, document);
